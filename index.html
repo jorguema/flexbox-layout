@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/style.css">
+
+</head>
+
+<body>
+    <h6>display: inline-flex</h6>
+    <div class="flex-container flex-inline">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div>
+
+    <h6>display: flex</h6>
+    <div class="flex-container">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div>
+
+    <h6>INLINE FLEX: row-reverse (row by default)</h6>
+    <div class="flex-container flex-inline direction-reverse">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div>
+    <h6> FLEX: row-reverse (row by default)</h6>
+    <div class="flex-container direction-reverse">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div>
+
+    <h6>INLINE FLEX: flex-direction: column</h6>
+    <div class="flex-container flex-inline direction-column">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div>
+
+    <h6>INLINE FLEX: flex-direction: column reverse</h6>
+    <div class="flex-container flex-inline direction-column-reverse">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div>
+
+    <h6>FLEX: flex-direction: column</h6>
+    <div class="flex-container direction-column">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div>
+
+    <h6>FLEX: flex-wrap: nowrap</h6>
+    <div class="flex-container flex-container-reduced">
+        <div class="flex-item flex-item-reduced">Flex item 1</div>
+        <div class="flex-item flex-item-reduced">Flex item 2</div>
+        <div class="flex-item flex-item-reduced">Flex item 3</div>
+        <div class="flex-item flex-item-reduced">Flex item 4</div>
+        <div class="flex-item flex-item-reduced">Flex item 5</div>
+        <div class="flex-item flex-item-reduced">Flex item 6</div>
+    </div>
+    
+    <h6>FLEX: flex-wrap: wrap</h6>
+    <div class="flex-container flex-container-reduced flex-wrap">
+        <div class="flex-item flex-item-reduced">Flex item 1</div>
+        <div class="flex-item flex-item-reduced">Flex item 2</div>
+        <div class="flex-item flex-item-reduced">Flex item 3</div>
+        <div class="flex-item flex-item-reduced">Flex item 4</div>
+        <div class="flex-item flex-item-reduced">Flex item 5</div>
+        <div class="flex-item flex-item-reduced">Flex item 6</div>
+    </div>
+    
+    <h6>FLEX: flex-wrap: wrap-reverse(bottom to top)</h6>
+    <div class="flex-container flex-container-reduced wrap-reverse">
+        <div class="flex-item flex-item-reduced">Flex item 1</div>
+        <div class="flex-item flex-item-reduced">Flex item 2</div>
+        <div class="flex-item flex-item-reduced">Flex item 3</div>
+        <div class="flex-item flex-item-reduced">Flex item 4</div>
+        <div class="flex-item flex-item-reduced">Flex item 5</div>
+        <div class="flex-item flex-item-reduced">Flex item 6</div>
+    </div>
+    
+    <h6>FLEX: flex-wrap: nowrap</h6>
+    <div class="flex-container flex-container-reduced flex-flow">
+        <div class="flex-item flex-item-reduced">Flex item 1</div>
+        <div class="flex-item flex-item-reduced">Flex item 2</div>
+        <div class="flex-item flex-item-reduced">Flex item 3</div>
+        <div class="flex-item flex-item-reduced">Flex item 4</div>
+        <div class="flex-item flex-item-reduced">Flex item 5</div>
+        <div class="flex-item flex-item-reduced">Flex item 6</div>
+    </div>
+    
+    <h6>FLEX: Order: (0 default, -1 at start</h6>
+    <div class="flex-container flex-container-reduced">
+        <div class="flex-item flex-item-reduced order1">Flex item 1 (order 1)</div>
+        <div class="flex-item flex-item-reduced">Flex item 2</div>
+        <div class="flex-item flex-item-reduced order1">Flex item 3 (order 1)</div>
+        <div class="flex-item flex-item-reduced">Flex item 4</div>
+        <div class="flex-item flex-item-reduced">Flex item 5</div>
+        <div class="flex-item flex-item-reduced">Flex item 6</div>
+    </div>
+    
+    <h6>FLEX: flex-grow</h6>
+    <div class="flex-container">
+        <div class="flex-item flex-item-grow">Flex item 1</div>
+        <div class="flex-item flex-item-grow">Flex item 2</div>
+        <div class="flex-item flex-item-grow">Flex item 3</div>
+    </div>
+    
+    <h6>FLEX: flex-justify</h6>
+    <div class="flex-container flex-justify">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div>
+    
+    <h6>FLEX: align-items: flex-START</h6>
+    <div class="flex-container flex-container-align flex-start">
+        <div class="flex-item flex-item-align">Flex item 1</div>
+        <div class="flex-item flex-item-align">Flex item 2</div>
+        <div class="flex-item flex-item-align">Flex item 3</div>
+    </div>
+    
+     <h6>FLEX: align-self</h6>
+    <div class="flex-container flex-container-align flex-center">
+        <div class="flex-item flex-item-align">Flex item 1</div>
+        <div class="flex-item flex-item-align align-self">Flex item 2</div>
+        <div class="flex-item flex-item-align">Flex item 3</div>
+    </div>
+
+</body>
+
+</html>
