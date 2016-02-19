@@ -1,4 +1,4 @@
-# angular2-sandbox
-Sandbox for Angular 2 with typescript
+# Flexbox-layout
+flexbox in deep
 
 npm start
